@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mukta:wght@500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
@@ -26,22 +26,27 @@
         </form>
       </header>
       <main>
-        <div>
-          <h1>London</h1>
-          <p>
-            Monday 14:09, Showers
-            <br />
-            Humidity: 81%, Wind: 13 mph
-          </p>
+        <div class="weather-forecast-data">
+          <div>
+            <h1 class="weather-forecast-city">London</h1>
+            <p class="weather-forecast-details">
+              Monday 14:09, Showers
+              <br />
+              Humidity: <strong>81%</strong>, Wind: <strong>13 mph</strong>
+            </p>
+          </div>
+          <div class="weather-forecast-temperature-container">
+            <div class="weather-forecast-icon">🌧</div>
+            <div class="weather-forecast-temperature">17</div>
+            <div class="weather-forecast-unit">°C</div>
+          </div>
         </div>
-        <div>🌧 17°C</div>
       </main>
       <footer>
         This was coded by
-        <a href="https://github.com/antoniab79">Antonia Bezinovic</a>, code
-        hosted on
+        <a href="https://github.com/antoniab79">Antonia B.</a>, code hosted on
         <a href="https://github.com/antoniab79/my-weather-forecast">GitHub</a>
-        and website hosted on <a href="https://www.netlify.com/">Netlify</a>
+        & website is hosted on <a href="https://www.netlify.com/">Netlify</a>
       </footer>
     </div>
   </body>

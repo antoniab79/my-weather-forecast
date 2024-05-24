@@ -33,6 +33,7 @@ main {
 
 .weather-forecast-city {
   margin: 0;
+  margin-top: 14px;
   font-size: 38px;
   line-height: 48px;
 }
@@ -45,12 +46,29 @@ main {
 .weather-forecast-details strong {
   color: #f65282;
 }
+.weather-forecast-temperature-container {
+  display: flex;
+}
+.weather-forecast-temperature {
+  font-size: 60px;
+  font-weight: 600;
+}
+.weather-forecast-icon {
+  font-size: 40px;
+  margin-left: 10px;
+  margin-top: 22px;
+}
+.weather-forecast-unit {
+  margin-top: 18px;
+  font-size: 28px;
+}
+
 .footer {
   border-top: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
   text-align: center;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 300;
+  font-size: 10px;
   color: rgba(0, 0, 0, 0.6);
 }
 .search-form-input {

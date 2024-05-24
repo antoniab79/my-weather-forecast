@@ -1,5 +1,5 @@
-function updateTemperature(response) {
-  let temperatureElement = document.querySelector("#temperatue");
+function refreshWeather(response) {
+  let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
 
@@ -10,7 +10,7 @@ function updateTemperature(response) {
 function searchCity(city) {
   let apiKey = "1e5e2f20350d3toa44fe9d489eb954a7";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(updateTemperature);
+  axios.get(apiUrl).then(refreshWeather);
 }
 
 function handleSearchSubmit(event) {
